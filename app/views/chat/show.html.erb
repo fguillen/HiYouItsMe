@@ -1,1 +1,14 @@
 Chat Show
+<%= turbo_stream_from "messages" %>
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+<div id="form">
+  <%= form_with(model: @message, url: messages_path, local: true) do |f| %>
+    <%= f.text_area :text %>
+    <div>
+      <%= f.submit data: { disable_with: false } %>
+    </div>
+  <% end %>
+</div>

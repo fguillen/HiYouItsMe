@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "chat#show"
+
+  resources :messages, only: [:create]
 end
