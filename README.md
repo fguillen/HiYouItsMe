@@ -1,24 +1,7 @@
-# README
+# HiYouItsMe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Playground project to test Rails 7 TurboStream and ActionCable
 
-Things you may want to cover:
+It is a single room chat web application.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![screenshot](hiyouitsme.gif)
