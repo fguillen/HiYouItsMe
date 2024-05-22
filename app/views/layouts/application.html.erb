@@ -11,9 +11,26 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
+  <body class="flex h-screen flex-col">
+
+        <nav class="flex-none border-b h-14">
+          <div x-data="{showMenu : false}" class="container relative max-w-screen-md mx-auto flex justify-between h-14">
+              <!-- Brand-->
+              <a href="#" class="flex items-center cursor-pointer hover:bg-purple-50 px-2 ml-3">
+                  <!-- Logo-->
+                  <div class="rounded bg-purple-400 text-white font-bold w-10 h-10 flex justify-center text-3xl pt-0.5">A</div>
+                  <div class="text-gray-700 font-semibold ml-2">Alphabet Tech</div>
+              </a>
+              <!-- Nav Links-->
+              <ul class="flex text-gray-700 text-base mr-3 origin-top z-10" id="navbar-main" x-cloak="">
+                  <li class="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800">
+                      <a href="#">Git Repo</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+
+
+        <%= yield %>
   </body>
 </html>
