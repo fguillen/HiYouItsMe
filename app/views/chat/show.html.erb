@@ -1,6 +1,9 @@
 
 
-<main class="grow overflow-auto max-w-screen-md place-self-center w-full px-8 py-5">
+<main
+  class="grow overflow-auto max-w-screen-md place-self-center w-full px-8 py-5"
+  data-controller="scroll-to-bottom"
+>
   <%= turbo_stream_from "messages" %>
   <div id="messages">
     <%= render @messages %>
@@ -9,7 +12,17 @@
 
 <div class="flex-none h-48 max-w-screen-md place-self-center w-full px-8">
   <div id="form">
-    <%= form_with(model: @message, url: messages_path, local: true) do |f| %>
+    <%=
+      form_with(
+        model: @message,
+        url: messages_path,
+        local: true,
+        data: {
+          controller: "reset-form",
+          action: "turbo:submit-end->reset-form#reset"
+        }
+      ) do |f|
+    %>
       <div class="">
           <label class="text-sm">Say something</label>
           <div class="mt-1">

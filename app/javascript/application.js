@@ -2,3 +2,4 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "custom/action_cable_debug"
+import "custom/debug_events"
