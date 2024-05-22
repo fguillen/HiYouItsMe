@@ -4,7 +4,7 @@
     data-controller="message-appears"
   >
     <div class="p-4 text-sm font-medium text-gray-700">
-      <%= message.text %>
+      <%= markdown(message.text) %>
     </div>
   </div>
 <% end %>
