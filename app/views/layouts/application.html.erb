@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HiYouItsMe Changed</title>
+    <title>HiYouItsMe</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -20,9 +20,16 @@
           <div x-data="{showMenu : false}" class="container relative max-w-screen-md mx-auto flex justify-between h-14">
               <!-- Brand-->
               <a href="#" class="flex items-center cursor-pointer hover:bg-purple-50 px-2 ml-3">
+
                   <!-- Logo-->
-                  <div class="rounded bg-purple-400 text-white font-bold w-10 h-10 flex justify-center text-3xl pt-0.5">A</div>
-                  <div class="text-gray-700 font-semibold ml-2">Alphabet Tech</div>
+                  <div class="rounded bg-yellow-500 text-white font-bold w-10 h-10 flex justify-center text-3xl items-center">
+                      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 10.5H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M8 14H13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22C17.5228 22 22 17.5228 22 12C22 10.1786 21.513 8.47087 20.6622 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                  </div>
+                  <div class="text-gray-700 font-semibold ml-2">HiYouItsMe</div>
               </a>
               <!-- Nav Links-->
               <ul class="flex text-gray-700 text-base mr-3 origin-top z-10" id="navbar-main" x-cloak="">
